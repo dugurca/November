@@ -12,6 +12,8 @@ namespace Assets._Project.Scripts.Day2
             randomSphere.GetComponent<SphereCollider>().material = PhysMat;
             randomSphere.GetComponent<Renderer>().material.color =
                 new Color(Random.value, Random.value, Random.value);
+            //randomSphere.transform.parent = transform;
+            randomSphere.transform.position = transform.position;
         }
     }
 }
