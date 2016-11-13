@@ -13,17 +13,16 @@ namespace Assets._Project.Scripts.Day2
         {
             Debug.Log("Start call");
         }
-
+        
+        void Update()
+        {
+            Debug.Log("Time: " + Time.time);
+            Debug.Log("Update time :" + Time.deltaTime);
+        }
 
         void FixedUpdate()
         {
             Debug.Log("FixedUpdate time :" + Time.deltaTime);
-        }
-
-
-        void Update()
-        {
-            Debug.Log("Update time :" + Time.deltaTime);
         }
     }
 }
